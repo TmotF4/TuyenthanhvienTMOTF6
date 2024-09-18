@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="img/logo5.png">
+    <title>Tuyển Thành viên TMOT F6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            line-height: 1.42857143;
+            color: #fff;
+            background-color: #fff;
+            font-family: slab;
+        }
+        
+        body p {
+            font-size: 18px;
+        }
+        
+        h2,
+        h3,
+        h4 {
+            margin: 10px 10px 5px 0;
+            color: #fff;
+        }
+        
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .nav navbar-nav navbar-right {
+            font: 400 15px/1.8 Lato, sans-serif;
+        }
+        
+        .member-list {
+            margin-top: 48px;
+        }
+        
+        .member-item {
+            float: left;
+            width: 25%;
+        }
+        
+        .bg-1 container {
+            padding: 80px 120px;
+        }
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.gthieu {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    margin: 10px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+h3 {
+    color: #444;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+        
+        .person {
+            border: 10px solid transparent;
+            margin-bottom: 25px;
+            width: 80%;
+            height: 80%;
+            opacity: 0.7;
+        }
+        
+        .person:hover {
+            border-color: #f1f1f1;
+        }
+        
+        .carousel-inner img {
+            /* make all photos black and white */
+            width: 100%;
+            /* Set width to 100% */
+            margin: auto;
+        }
+        
+        .gthieu {
+            text-align: center;
+            background-image: url(img/web2-01.jpg);
+        }
+        
+        .bdh {
+            color: #000;
+            text-align: center;
+            background-color: #fff;
+            background-image: url(img/space.gif);
+        }
+        
+        .bdh strong {
+            font-size: 18px;
+        }
+        
+        .gthieu p {
+            color: #fff;
+        }
+        
+        .carousel-caption h3 {
+            color: #fff !important;
+            font-size: 10;
+        }
+        .row {
+    display: flex;
+    justify-content: space-between; /* Căn đều khoảng cách giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px; /* Thêm khoảng cách trên cho đẹp */
+}
+
+.col-sm-2 img {
+    margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+}
+
+        
+        @media(min-width: 320px) and (max-width: 860px) {
+            .navbar-header {
+                height: 25;
+            }
+            .nog {
+                margin-top: 30px;
+                width: 100%;
+            }
+            .carousel-caption {
+                display: none;
+                /* Hide the carousel text when the screen is less than 600 pixels wide */
+            }
+            .gthieu h2 {
+                font-size: 20px;
+            }
+            .gthieu h3 {
+                font-size: 15px;
+            }
+            .gthieu p {
+                font-size: 14px;
+            }
+            .footer h2 {
+                font-size: 14px;
+            }
+        }
+        
+        .bg-1 {
+            background: #fff;
+            background-image: url(img/web2-01.jpg);
+            color: #111;
+        }
+        
+        .bg-1 a {
+            font-style: italic;
+            font-size: small;
+            font: Lato, sans-serif
+        }
+        
+        .bg-1 h3 {
+            color: #29292c
+        }
+        
+        .bg-1 p {
+            font-style: italic;
+        }
+        
+        .list-group-item:first-child {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+        
+        .list-group-item:last-child {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        
+        #main {
+            overflow: hidden;
+        }
+        
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        
+        .thumbnail p {
+            margin-top: 15px;
+            color: #f1f1f1;
+        }
+        
+        .thumbnail a {}
+        
+        .btn {
+            padding: 10px 20px;
+            background-image: url(img/1-01.jpg);
+            color: #f1f1f1;
+            border-radius: 0;
+            transition: .2s;
+        }
+        
+        .btn:hover,
+        .btn:focus {
+            border: 1px solid;
+            background-color: #333;
+            color: #000;
+        }
+        
+        .modal-header,
+        h4,
+        .close {
+            background-color: #333;
+            color: #fff !important;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .modal-header,
+        .modal-body {
+            padding: 40px 80px;
+        }
+        
+        .nav-tabs li a {
+            color: #000;
+        }
+        
+        .navbar {
+            font-family: Lato, sans-serif;
+            margin-bottom: 0;
+            background-image: url(img/2-01.jpg);
+            border: 0;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+            text-align: center;
+        }
+        
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+        
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+        
+        .img-circle {
+            border-radius: 50%;
+            padding-bottom: 25px;
+        }
+        
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+        
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+        
+        .nav-tabs>li.active>a,
+        .nav-tabs>li.active>a:focus,
+        .nav-tabs>li.active>a:hover {
+            color: #55ae3d;
+            cursor: default;
+            background-color: green;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+        }
+        
+        .dropdown-menu li a:hover {
+            background-color: green !important;
+        }
+        
+        footer {
+    background-image: url(img/1-01.jpg);
+    color: #f5f5f5;
+    padding: 20px 0;
+    width: 100%; /* Đảm bảo footer chiếm toàn bộ chiều ngang */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước phần tử */
+    overflow: hidden; /* Ẩn mọi phần tử tràn khỏi footer */
+}
+
+footer {
+    background-image: url(img/1-01.jpg);
+    color: #f5f5f5;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;  /* Sử dụng Flexbox */
+    justify-content: space-between; /* Căn đều các cột */
+    flex-wrap: wrap; /* Cho phép các cột tự động xuống dòng khi không đủ chỗ */
+}
+
+footer .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+footer .col-md-12 {
+    flex: 0 0 30%;  /* Cột chiếm 30% chiều rộng màn hình khi đủ chỗ */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Khi màn hình nhỏ hơn 860px, các thẻ div sẽ xuống dòng */
+@media (max-width: 860px) {
+    footer {
+        flex-direction: column; /* Thay đổi hướng flex để cột xuống hàng */
+        align-items: center; /* Căn giữa các cột */
+    }
+
+    footer .col-md-12 {
+        flex: 0 0 100%;  /* Cột chiếm 100% chiều rộng màn hình khi thu nhỏ */
+        margin-bottom: 10px;  /* Khoảng cách giữa các cột khi xuống dòng */
+        text-align: center;  /* Căn giữa nội dung trong cột */
+    }
+}
+
+        footer a:hover {
+            color: #777;
+            text-decoration: none;
+        }
+        
+        .form-control {
+            border-radius: 0;
+        }
+        
+        textarea {
+            resize: none;
+        }
+        /* Đảm bảo layout hiện tại với 2 cột khi màn hình lớn */
+/* Đảm bảo layout hiện tại với nhiều cột khi màn hình lớn */
+#bdh .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#bdh .col-sm-6{
+    flex: 1;
+    max-width: 50%; /* Cột 50% khi màn hình lớn */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Khi màn hình nhỏ hơn 860px, tất cả các phần tử sẽ xuống hàng cùng lúc */
+@media (max-width: 860px) {
+    #bdh .col-sm-6{
+        max-width: 100%; /* Cột 100% khi màn hình nhỏ */
+        margin-bottom: 20px;
+    }
+
+    #bdh .row {
+        justify-content: center; /* Căn giữa các phần tử */
+    }
+    /* Sử dụng Flexbox để các thẻ div xuống hàng khi màn hình nhỏ */
+
+/* Điều chỉnh kích thước các cột khi màn hình lớn */
+.col-sm-2 {
+    flex: 0 0 20%; /* Cột 20% khi màn hình lớn */
+    max-width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Khi màn hình nhỏ hơn 768px, tất cả các thẻ div sẽ xuống hàng */
+@media (max-width: 860px) {
+    .col-sm-2 {
+        flex: 0 0 100%; /* Cột 100% khi màn hình nhỏ */
+        max-width: 100%;
+    }
+}
+
+}
+
+
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="main">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                    <a class="navbar-brand" href="#myPage" style=" font: size 24px;letter-spacing: 0px; font-weight: 800;">TMOT</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#myPage">HOẠT ĐỘNG NỔI BẬT</a></li>
+                        <li><a href="#band">GIỚI THIỆU</a></li>
+                        <li><a href="#tour">TỔ CHỨC</a></li>
+                        <li><a href="#contact">ĐĂNG KÝ</a></li>
+                        <li class="dropdown">
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/bia.jpg" alt="New York" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/1234.png" alt="Chicago" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>SINH VIÊN 5 TỐT</h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Teambuilding.jpg" alt="Los Angeles" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>TEAMBUILDING</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/gala.JPG" alt="gala" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>GALA</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/wetalk.jpg" alt="HBSV" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>WEtalk </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/hoithao.jpg" alt="SNĐ" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>NHÀY HỘI SINH VIÊN KHỎE </h3>
+                    </div>
+                </div>
+              </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- giới thieu) -->
+        <!DOCTYPE html>
+        <html lang="vi">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Thông tin TMOT</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <div class="gthieu" id="band">
+                <div class="container">
+                    <div class="text-center">
+                        <h2>TMOT - ĐỘI PHONG TRÀO ĐOÀN - HỘI TRƯỜNG ĐẠI HỌC TÔN ĐỨC THẮNG</h2>
+                        <p class="quote">"TMOT là nhà, thành viên TMOT là đồng đội"</p>
+                        <hr>
+                        <h3>LỊCH SỬ HÌNH THÀNH</h3>
+                        <p>Đầu năm học 2018 - 2019, một nhóm cộng tác viên Ban Phong trào Đoàn - Hội được thành lập với mục đích xây dựng những hoạt động mang tầm ảnh hưởng, có sức lan tỏa đến cộng đồng sinh viên Đại học Tôn Đức Thắng. Trải qua 1 năm hoạt động,
+                            ngày 20/6/2019, Đội Phong trào Đoàn - Hội Trường Đại học Tôn Đức Thắng (TMOT) chính thức được ký quyết định thành lập theo quyết định số 123-QĐ/HSV-TC và trực thuộc Hội Sinh viên Trường Đại học Tôn Đức Thắng.
+                        </p>
+                        <h3>MỤC ĐÍCH - Ý NGHĨA</h3>
+                        <p>Đội Phong trào Đoàn - Hội Trường Đại học Tôn Đức Thắng được lập ra nhằm tìm kiếm những tài năng trẻ, những cá nhân năng động, nhiệt huyết, sáng tạo, đam mê với các hoạt động ngoại khóa, tổ chức sự kiện. Đội Phong trào Đoàn - Hội Trường
+                            Đại học Tôn Đức Thắng hình thành nên một đội ngũ gồm những thành viên tiên phong cũng như những con người của thế hệ mới cùng nhau xây dựng, tổ chức và phát triển những sự kiện có sức lan tỏa tới sinh viên toàn trường, hướng tới lối
+                            sống văn minh, lành mạnh.</p>
+                        <h3>TẦM NHÌN</h3>
+                        <p>Trở thành một trong những bộ phận nòng cốt của phong trào Đoàn - Hội nói riêng và phong trào sinh viên trường Đại học Tôn Đức Thắng nói chung. Tạo nguồn, cung cấp các nhân sự, cán bộ Đoàn - Hội có đầy đủ kinh nghiệm, chuyên môn cho các
+                            Khoa, Trường. Xây dựng Đội đi đầu trong các hoạt động tổ chức phong trào của Đoàn - Hội trong phạm vi nhà trường.</p>
+                        <h3>SỨ MẠNG</h3>
+                        <p>Tập hợp các thành viên có đầy đủ các điều kiện về tác phong, kiến thức, năng lực và chuyên môn làm việc phù hợp với hình ảnh Đoàn - Hội. Tập huấn các kiến thức, kĩ năng cần thiết cho các thành viên TMOT; tạo môi trường cho các thành viên
+                            được giao lưu học hỏi, thể hiện khả năng của chính bản thân mình. Nâng cao hình ảnh cán bộ Đoàn - Hội đối với sinh viên toàn trường. Tổ chức được các hoạt động, sự kiện ý nghĩa, tạo được sức hút lớn, sức lan tỏa rộng rãi đến với sinh
+                            viên toàn trường.</p>
+                        <h3>NGUYÊN TẮC LÀM VIỆC</h3>
+                        <p>Phản hồi và bảo mật thông tin - Trao đổi thẳng thắn, đúng người đúng việc - Tôn trọng deadline - Tôn trọng sự khác biệt - Mâu thuẫn tích cực </p>
+                        <h3>QUY CHẾ HOẠT ĐỘNG</h3>
+                        <p>Cống hiến - Sáng tạo - Trách nhiệm - Vì lợi ích tập thể</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        <div id="bdh" class="bdh">
+            <h2 style="color: #111;">BAN ĐIỀU HÀNH</h2>
+        
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/IMG_2950.JPG" class="img-circle" alt="Huỳnh Thị Thanh Tuyền" width="250" height="400">
+                    <p class="text-center"><strong>Huỳnh Thị Thanh Tuyền</strong></p>
+                    <p>Đội Trưởng</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/123.png" class="img-circle" alt="Nguyễn Duy Khang" width="250" height="400">
+                    <p class="text-center"><strong>Nguyễn Duy Khang</strong></p>
+                    <p>Đội Phó</p>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="img/Hiếu.JPG" class="img-thumbnail" alt="Lê Phân Hiếu" width="200" height="300">
+                    <p class="text-center"><strong>Lê Phân Hiếu</strong></p>
+                    <p>Ủy viên Ban Điều hành</p>
+                </div>
+                <div class="col-sm-2">
+                    <img src="img/Dung2.png" class="img-thumbnail" alt="Lê Thị Ngọc Dung" width="200" height="300">
+                    <p class="text-center"><strong>Lê Thị Ngọc Dung</strong></p>
+                    <p>Ủy viên Ban Điều hành</p>
+                </div>
+                <div class="col-sm-2">
+                    <img src="img/Kiên.JPG" class="img-thumbnail" alt="Tạ Trung Kiên" width="200" height="300">
+                    <p class="text-center"><strong>Tạ Trung Kiên</strong></p>
+                    <p>Ủy viên Ban Điều hành</p>
+                </div>
+                <div class="col-sm-2">
+                    <img src="img/Hiền.JPG" class="img-thumbnail" alt="Nguyễn Thị Thu Hiền" width="200" height="300">
+                    <p class="text-center"><strong>Nguyễn Thị Thu Hiền</strong></p>
+                    <p>Ủy viên Ban Điều hành</p>
+                </div>
+                <div class="col-sm-2">
+                    <img src="img/IMG_5715.JPG" class="img-thumbnail" alt="Dương Gia Hân" width="200" height="300">
+                    <p class="text-center"><strong>Dương Gia Hân</strong></p>
+                    <p>Thư ký Đội</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Container (TOUR Section) -->
+        <div id="tour" class="bg-1">
+            <div class="container">
+                <h2 class="text-center" style="padding-top: 24px;"> BỘ MÁY HOẠT ĐỘNG </h2>
+                <p class="text-center"><br> </p>
+                <div class="row"></div>
+                <div class="row text-center">
+                    <div class="text-center">
+                        <div class="thumbnail">
+                            <img src="img/ban tt2-01.png" alt="Truyền Thông" width="600" height="500">
+                            <p style="color: #55ae3d; font-size: 25px;"><strong>Ban Truyền Thông</strong></p>
+                            <a href="#truyenthong" data-toggle="collapse">Mô tả công việc</a><br>
+                            <div id="truyenthong" class="collapse">
+                                <h3>Team Hình Ảnh</h3>
+                                <li>Sáng tạo nội dung của chương trình</li>
+                                <li>Thực hiện công tác hậu kỳ hình ảnh</li>
+                                <li>Có kinh nghiệm sử dụng các thiết bị chụp hỉnh </li>
+                                <li>Có kỹ năng chụp ảnh, edit cơ bản </li>
+                                <p>------------------------------------------------</p>
+                                <h3>Team Thiết Kế</h3>
+                                <li>Thiết kế các ấn phẩm truyền thông</li>
+                                <li>Khả năng sử dụng các công cụ thiết kế như Adobe Photoshop, Adobe Illustrator, Canva,… cơ bản</li>
+                                <p>------------------------------------------------</p>
+                                <h3>Team Biên Tập</h3>
+                                <li>Sáng tạo sắp xếp phương án, kịch bản truyền thông sự kiện tiếp cận sinh viên
+                                     </li>
+                                <li>Có ý tưởng sáng tạo truyền thông thông điệp (content) thông qua các hình thức ấn phẩm</li>
+                                <li>Có khả năng quản lý các nền tảng mạng xã hội</li>
+                                <p>------------------------------------------------</p>
+                                <h3>Team Video</h3>
+                                <li>Quay, dựng video
+                                </li>
+                                <li>Hậu kỳ video sau mỗi sự kiện</li>
+                                <li>Có kinh nghiệm sử dụng các thiết bị quay phim</li>
+                                <li> Có khả năng edit video cơ bản, biết sử dụng các phần mềm chỉnh sửa video như Adobe Premiere Pro, Adobe After Effect, Capcut,…</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row"></div>
+                <div class="row text-center">
+                    <div class="text-center">
+                        <div class="thumbnail">
+                            <img src="img/ban sk2-01.png" alt="Sự Kiện" width="600" height="500">
+                            <p style="color: #55ae3d; font-size: 25px;"><strong>Ban Sự Kiện</strong></p>
+                            <a href="#sukien" data-toggle="collapse">Mô tả công việc</a><br>
+                            <div id="sukien" class="collapse">
+                                <h3>Team Điều Phối</h3>
+                                <li>Lên ý tưởng chương trình</li>
+                                <li>Viết kịch bản chương trình, kịch bản MC</li>
+                                <li>Lên checklist chi tiết các công việc </li>
+                                <li>Điều phối sân khấu, sinh viên</li>
+                                <p>------------------------------------------------</p>
+                                <h3>Team Hậu Cần</h3>
+                                <li>Chịu trách nhiệm in ấn các ấn phẩm</li>
+                                <li>Chuẩn bị các vật dụng cần thiết cho chương trình</li>
+                                <li>Quyết toán thu chi</li>
+                                <p>------------------------------------------------</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="text-center">
+                        <div class="thumbnail">
+                            <img src="img/ban hcns2-01.png" alt="Ban HCNS" width="600" height="500">
+                            <p style="color: #55ae3d; font-size: 25px;"><strong>Ban Hành Chính - Nhân Sự</strong></p>
+                            <a href="#hcns" data-toggle="collapse">Mô tả công việc</a><br>
+                            <div id="hcns" class="collapse">
+                                <li>Soạn thảo và trình ký giấy tờ hành chính</li>
+                                <li>Tạo biểu mẫu đăng ký</li>
+                                <li>Quản lý nhân sự</li>
+                                <li>Thực hiện công tác khảo sát nhân sự</li>
+                                <li>Điểm danh sinh viên</li>
+                                <li>Thư ký Ban Giám khảo</li>
+                                <li>Take care khách mời</li>
+                                <li>Làm danh sách ghi nhận hoạt động cho sinh viên</li>
+                                <li>Tổng hợp, cập nhật và lưu trữ tài liệu liên quan</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="contact" class="bdh">
+        <div class="row text-center" style="padding-top: 20PX;padding-bottom: 20PX;">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfob4LvBbJKrNBJmcQmDcvITwJaRqeW9hI0xhp7MVnjMund5A/viewform?pli=1&pli=1&fbclid=IwZXh0bgNhZW0CMTEAAR0LgMdsw-WXVOdZsMIc-ApAI965zDfDnukj3VPE9PzgRhGUGR8WGIT9oGM_aem_i6BQZXHRdbevlCwPiI0lww">
+                <button class="btn" data-toggle="modal" data-target="#myModal" style="padding-top: 20PX;padding-bottom: 20PX; font-size: 18px; ">ĐĂNG KÝ TẠI ĐÂY !</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="padding: 20px 0;">
+            <div class="row" style="margin-bottom: 30px;">
+                <!-- Email Section -->
+                <div class="col-md-12 text-center" style="padding-top: 15px;">
+                    <div class="footer-item">
+                        <div class="footer-heading">
+                            <h2>Email</h2>
+                        </div>
+                        <ul class="footer-list">
+                            <li><a href="mailto:doiphongtraotmot@gmail.com">doiphongtraotmot@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fanpage Section -->
+                <div class="col-md-12 text-center" style="padding-top: 15px;">
+                    <div class="footer-item">
+                        <div class="footer-heading">
+                            <h2>Fanpage</h2>
+                        </div>
+                        <ul class="footer-list">
+                            <li><a href="https://www.facebook.com/tdtu.tmot" target="_blank">Đội Phong trào Đoàn - Hội Trường Đại học Tôn Đức Thắng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Address Section -->
+                <div class="col-md-12 text-center" style="padding-top: 15px;">
+                    <div class="footer-item">
+                        <div class="footer-heading">
+                            <h2>Địa Chỉ</h2>
+                        </div>
+                        <ul class="footer-list">
+                            <li><a href="https://g.page/TDTUniversity?share" target="_blank">Số 19, Đường Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script>
+        $(document).ready(function() {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
+
+</body>
+
+</html>
